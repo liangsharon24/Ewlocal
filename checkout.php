@@ -1,9 +1,12 @@
+<?php
+$con=mysqli_connect("localhost","Ew","0000","Ew");
+?>
   <div id="checkout">
 
       <h1>Check Out</h1>
       <?php
-      session_start();
-
+        session_start();
+          // var_dump($_SESSION['cart']);
           if(isset($_SESSION['cart'])){
 
               $sql="SELECT * FROM products WHERE id_product IN (";
@@ -19,7 +22,7 @@
                 $subtotal=$_SESSION['cart'][$row['id_product']]['quantity']*$row['price'];
                 $totalprice+=$subtotal;
               ?>
-                  <p><?php echo $row['name'] ?> x <?php echo $_SESSION['cart'][$row['id_product']]['quantity'] ?> x <?php echo $row['price'] ?></p>
+                  <p id="checkout"><?php echo $row['name'] ?> x <?php echo $_SESSION['cart'][$row['id_product']]['quantity'] ?> x <?php echo $row['price'] ?></p>
               <?php
 
               }
@@ -28,6 +31,7 @@
               <td colspan="4">Total Price: <?php echo $totalprice ?></td>
           </tr>
               <hr />
+              <button type="submit" name="submit">Confirm</button>
               <a href="index.php?page=cart">Go to cart</a>
           <?php
 
