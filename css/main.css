@@ -1,0 +1,39 @@
+body {
+  background: wheat;
+  font-family: Raleway;
+}
+h1 {
+  padding: 0px;
+  margin: 0 auto;
+  font-weight: 100;
+  color: #AD5318;
+  font-size: 40px;
+  text-align: center;
+}
+#svg-doc {
+  margin: 0 auto;
+  display: block;
+}
+header {
+  padding: 10px;
+}
+header .back-to-article {
+  color: #FFF;
+  font-family: "Raleway", Arial, Verdana;
+  text-decoration: none;
+  font-weight: 200;
+  font-size: 14px;
+}
+header .back {
+  color: #FFF;
+}
+header .social-wrapper {
+  float: right;
+}
+header .social-wrapper .fb-like {
+  vertical-align: top;
+}
+#enter p {
+  margin: 0 auto;
+  text-decoration-line: underline;
+}
