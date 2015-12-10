@@ -56,20 +56,22 @@
   -webkit-box-shadow: 3px 3px 10px rgba(0,0,0,0.3);
   box-shadow: 3px 3px 10px rgba(0,0,0,0.3);
 }
-
+.circle img{
+  width:100px;
+}
 /*MAIN CIRCLE*/
 .circle {
   position: relative;
-  margin-top: 30px;
+  margin-top: 80px;
   margin-bottom: 20px;
   margin-left: 90px;
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
   border-radius: 50%;
-  background: #093b62;
+  background:white;
 
   box-shadow: inset 0px 0px 30px rgba(0,0,0,0.3);
-  -webkit-box-shadow: inset 0px 0px 30px rgba(0,0,0,0.3);
+  -webkit-box-shadow: inset 0px 0px 0px rgba(0,0,0,0.3);
 
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
