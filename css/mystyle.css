@@ -81,7 +81,7 @@ header {
 }
 
 /*LITTLE CIRCLES*/
-.circle li {
+.circle li {  
   position: absolute;
   width: 175px;
   height: 175px;
