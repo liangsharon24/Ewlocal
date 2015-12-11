@@ -12,7 +12,7 @@ foreach($_POST['quantity'] as $key => $val) {
 }
 ?>
 <h1>View cart</h1>
-<a href="index.php?page=products">Go back to products page</a>
+<a href="main.html">Go back to products page</a>
 <form method="post" action="index.php?page=cart">
 
     <table>

@@ -60,24 +60,22 @@ else{
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" media="screen" href="css/mystyle.css">
 <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,200,500,600,700,100' rel='stylesheet' type='text/css'>
-<title>Appetizer</title>
+<title>Dessert</title>
 
 
 </head>
 
 <body>
-
   <header>
     <h1>Restaurant Ew!</h1>
   </header>
-  
   <div class="wrapper">
   <div class="menu">
     <a href="main.html">Home</a>
-    <a href="appetizer.php" class="current">Appetizer</a>
+    <a href="appetizer.php">Appetizer</a>
     <a href="soup.php">Soup</a>
     <a href="maindish.php">Main Dishes</a>
-    <a href="dessert.php">Desserts</a>
+    <a href="dessert.php" class="current">Desserts</a>
   </div>
   <p id="blank">
   </p>
@@ -99,7 +97,7 @@ else{
 
       <?php
 
-      $sql="SELECT * FROM products where id_product IN (1,2,3) ORDER BY name ASC";
+      $sql="SELECT * FROM products where id_product IN (10,11,12) ORDER BY name ASC";
       $query=mysqli_query($con,$sql);
 
       while ($row=mysqli_fetch_array($query,MYSQLI_ASSOC)) {
@@ -110,7 +108,7 @@ else{
               <div class="dishtitles"><?php echo $row['name'] ?></div>
               <div class="dishtitles"><?php echo $row['description'] ?></div>
               <div class="dishtitles"><?php echo $row['price'] ?></div>
-              <div class="dishtitles"> <a href="appetizer.php?action=add&id=<?php echo $row['id_product'] ?>">Add to cart</a></div>
+              <div class="dishtitles"> <a href="dessert.php?action=add&id=<?php echo $row['id_product'] ?>">Add to cart</a></div>
 </div>
       <?php
       }
@@ -118,6 +116,7 @@ else{
 
 
     </div><!--end of main-->
+
 
     <div id="sidebar">
 

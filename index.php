@@ -73,6 +73,9 @@ if(isset($_GET['page'])){
 </head>
 
 <body>
+<header>
+  <h1>Restaurant Ew!</h1>
+</header>
 
 <div id="container">
 

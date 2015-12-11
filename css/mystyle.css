@@ -5,7 +5,11 @@
     margin-top: 10px;
     text-align: center;
     font-family: raleway;
+    max-width: 100%;
 }
+
+
+
 h1 {
   padding-top: 30px;
   margin: 0 auto;
