@@ -134,6 +134,10 @@ else{
 
               $sql=substr($sql, 0, -1).") ORDER BY name ASC";
               $query=mysqli_query($con,$sql);
+              if($query === false){
+                       echo "<h2>There are no items in your cart. Try shopping something!</h2>";
+                       die(mysql_error());
+                    }
               while($row=mysqli_fetch_array($query,MYSQLI_ASSOC)){
 
               ?>

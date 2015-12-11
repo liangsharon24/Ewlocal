@@ -36,6 +36,10 @@ foreach($_POST['quantity'] as $key => $val) {
                     $sql=substr($sql, 0, -1).") ORDER BY name ASC";
                     $query=mysqli_query($con,$sql);
                     $totalprice=0;
+                    if($query === false){
+                       echo "<h2>There are no items in your cart. Try shopping something!</h2>";
+                       die(mysql_error());
+                    }
                     while($row=mysqli_fetch_array($query)){
                         $subtotal=$_SESSION['cart'][$row['id_product']]['quantity']*$row['price'];
                         $totalprice+=$subtotal;

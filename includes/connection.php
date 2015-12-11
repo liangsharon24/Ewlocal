@@ -1,11 +1,11 @@
 <?php
 
-  $server="localhost";
-  $user="Ew";
-  $pass="0000";
-  $db="Ew";
+  $server="mysql4.000webhost.com";
+  $user="a9672506_Ew";
+  $pass="abcd1234";
+  $db="a9672506_Ew";
 
-  $con=mysqli_connect("localhost","Ew","0000","Ew");
+  $con=mysqli_connect("mysql4.000webhost.com","a9672506_Ew","abcd1234","a9672506_Ew");
 
 
   // connect to mysql
