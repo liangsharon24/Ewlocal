@@ -16,6 +16,10 @@ $con=mysqli_connect("mysql4.000webhost.com","a9672506_Ew","abcd1234","a9672506_E
             $sql_s="SELECT * FROM products
                 WHERE id_product={$id}";
             $query_s=mysqli_query($con,$sql_s);
+            // if($query === false){
+            //            echo "<h4>There are no items in your cart. Try shopping something!</h2>";
+            //            die(mysql_error());
+            //         }
             if(mysqli_num_rows($query_s)!=0){
                 $row_s=mysqli_fetch_array($query_s,MYSQLI_ASSOC);
 
@@ -100,7 +104,10 @@ else{
 
       $sql="SELECT * FROM products where id_product IN (7,8,9) ORDER BY name ASC";
       $query=mysqli_query($con,$sql);
-
+      // if($query === false){
+      //            echo "<h4>There are no items in your cart. Try shopping something!</h2>";
+      //            die(mysql_error());
+      //         }
       while ($row=mysqli_fetch_array($query,MYSQLI_ASSOC)) {
 
       ?>
@@ -134,7 +141,7 @@ else{
               $sql=substr($sql, 0, -1).") ORDER BY name ASC";
               $query=mysqli_query($con,$sql);
               if($query === false){
-                       echo "<h2>There are no items in your cart. Try shopping something!</h2>";
+                       echo "<h4>There are no items in your cart. Try shopping something!</h2>";
                        die(mysql_error());
                     }
               while($row=mysqli_fetch_array($query,MYSQLI_ASSOC)){

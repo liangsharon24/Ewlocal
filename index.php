@@ -64,21 +64,30 @@ if(isset($_GET['page'])){
 }
 
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"> -->
+
+<!DOCTYPE html>
+<html>
+
 <head>
+  <meta charset="UTF-8">
+  <title>Restaurant Ew! Shopping Cart</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/style.css" />
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,200,500,600,700,100' rel='stylesheet' type='text/css'>
 
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" href="css/reset.css" />
-<link rel="stylesheet" href="css/style.css" />
-<title>Shopping Cart</title>
-
+-->
 
 </head>
 
 <body>
 <header>
-  <h1>Restaurant Ew!</h1>
+  <h1>Restaurant Ew! Shopping Cart</h1>
 </header>
 
 <div id="container">
