@@ -11,6 +11,7 @@ foreach($_POST['quantity'] as $key => $val) {
 
 }
 ?>
+
 <h1>View cart</h1>
 <h4>
 <a href="main.html">Go back to products page</a>

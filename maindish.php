@@ -112,6 +112,7 @@ else{
       while ($row=mysqli_fetch_array($query,MYSQLI_ASSOC)) {
 
       ?>
+              <!-- images from http://www.wallcoo.com/paint/food_artwork_02/index.html -->
 <div class="col-xs-4">
               <img class="dishtitles" alt="<?php echo $row['name'] ?>" src="<?php echo $row['photo'] ?>">
               <div class="dishtitles"><?php echo $row['name'] ?></div>
