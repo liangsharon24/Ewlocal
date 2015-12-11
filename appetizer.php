@@ -54,7 +54,7 @@ if(isset($message)){
 
 <?php
 
-$sql="SELECT * FROM products where id_product='1' ORDER BY name ASC";
+$sql="SELECT * FROM products ORDER BY name ASC";
 $query=mysqli_query($con,$sql);
 
 while ($row=mysqli_fetch_array($query,MYSQLI_ASSOC)) {
