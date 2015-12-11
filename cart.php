@@ -25,7 +25,7 @@ foreach($_POST['quantity'] as $key => $val) {
         </tr>
 
         <?php
-        $con=mysqli_connect("localhost","Ew","0000","Ew");
+        $con=mysqli_connect("mysql4.000webhost.com","a9672506_Ew","abcd1234","a9672506_Ew");
 
             $sql="SELECT * FROM products WHERE id_product IN (";
 

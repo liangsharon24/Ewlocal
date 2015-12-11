@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-$con=mysqli_connect("localhost","Ew","0000","Ew");
+$con=mysqli_connect("mysql4.000webhost.com","a9672506_Ew","abcd1234","a9672506_Ew");
 
     if(isset($_GET['action']) && $_GET['action']=="add"){
 
@@ -70,7 +70,7 @@ else{
   <header>
     <h1>Restaurant Ew!</h1>
   </header>
-  
+
   <div class="wrapper">
   <div class="menu">
     <a href="main.html">Home</a>
@@ -86,7 +86,7 @@ else{
     <div id="main">
 
       <?php
-      $con=mysqli_connect("localhost","Ew","0000","Ew");
+      $con=mysqli_connect("mysql4.000webhost.com","a9672506_Ew","abcd1234","a9672506_Ew");
       ?>
 
 
