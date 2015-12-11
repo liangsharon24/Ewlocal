@@ -64,6 +64,7 @@ else{
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" media="screen" href="css/mystyle.css">
 <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,200,500,600,700,100' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/animate.min.css" type="text/css">
 <title>Main Dish</title>
 
 

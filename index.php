@@ -122,7 +122,7 @@ if(isset($_GET['page'])){
               }
           ?>
               <hr />
-              <a href="index.php?page=cart">Go to cart</a>
+              <h4><a href="index.php?page=cart">Go to cart</a></h4>
           <?php
 
           }else{

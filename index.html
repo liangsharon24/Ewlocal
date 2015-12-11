@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/main.css">
   <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,200,500,600,700,100' rel='stylesheet' type='text/css'>
+  
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="snap.svg-min.js"></script>
   <script type="text/javascript">
@@ -37,7 +38,7 @@
       }, 5000, mina.easeout, function() {
         ship_move_up();
       });
-      setTimeout("location.href = 'main.html';", 5800);
+      setTimeout("location.href = 'main.html';", 6500);
     };
 
     function animate_thruster_up() {
@@ -55,6 +56,11 @@
         animate_thruster_up();
       });
     }
+
+    function play(){
+     var audio = document.getElementById("audio");
+     audio.play();
+               }
   </script>
 </head>
 
@@ -104,7 +110,9 @@
 
   </svg>
   <div style="text-align: center">
-    <button id="enter" class="btn btn-success" onclick="walk()">Let's Go!</button>
+    <button id="enter" class="btn btn-success" onclick="walk();play()">Let's Go!</button>
+    <audio id="audio" src="ew.m4a" ></audio>
+
   </div>
 </body>
 
